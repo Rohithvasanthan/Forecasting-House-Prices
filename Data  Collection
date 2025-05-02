@@ -1,0 +1,17 @@
+# Import required libraries for data handling
+import pandas as pd
+
+# Load dataset
+df = pd.read_csv('house_price_dataset.csv')
+
+# Display first few rows
+print("First 5 Rows of the Dataset:")
+print(df.head())
+
+# Check basic info
+print("\nDataset Info:")
+print(df.info())
+
+# Check for missing values
+print("\nMissing Values:")
+print(df.isnull().sum())
